@@ -1,0 +1,7 @@
+file = open("sequence.fasta", "r")
+
+for line in file:
+    if not line.startswith(">"):
+        print(line.strip())
+
+file.close()
